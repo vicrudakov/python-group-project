@@ -1,4 +1,3 @@
-%% README.md
 # Group project for Python course
 
 Description will follow.
@@ -13,4 +12,4 @@ Will follow.
 Will follow.
 
 ## License
-Will follow.
+The content of this site is licensed under the MIT License.
