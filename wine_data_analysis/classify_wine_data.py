@@ -4,6 +4,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 
+
 class ClassifyWineData:
     def __init__(self, data):
         """Classify wine data using logistic regression, decision tree, and 
