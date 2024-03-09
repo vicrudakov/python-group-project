@@ -1,1 +1,3 @@
 .DS_Store
+build/
+wine_data_analysis.egg-info/
