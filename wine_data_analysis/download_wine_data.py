@@ -5,7 +5,7 @@ import pandas as pd
 
 class DownloadWineData:
     def __init__(self, data_download_path, data_file_name):
-        """Download wine data.
+        """Download wine data and load it into the working environment.
 
         Parameters
         ----------
@@ -17,6 +17,7 @@ class DownloadWineData:
         Returns
         -------
         None.
+
         """
         self.url = "https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data"
         self.data_download_path = data_download_path
@@ -38,6 +39,7 @@ class DownloadWineData:
         Returns
         -------
         None.
+
         """
         os.chdir(self.data_download_path)
 
@@ -51,6 +53,7 @@ class DownloadWineData:
         Returns
         -------
         None.
+
         """
         response = requests.get(self.url)
         with open(self.data_file_name, "wb") as f:
@@ -69,6 +72,7 @@ class DownloadWineData:
             Downloaded data set with 178 observations and 14 variables ('class', 'alcohol', 'malic_acid', 'ash',
             'ash_alcalinity', 'magnesium', 'phenols_total', 'flavanoids', 'phenols_nonflavanoid', 'proanthocyanins',
             'color_intensity', 'hue', 'OD280_OD315', 'proline').
+
         """
         names = ['class', 'alcohol', 'malic_acid', 'ash', 'ash_alcalinity', 'magnesium', 'phenols_total', 'flavanoids',
                  'phenols_nonflavanoid', 'proanthocyanins', 'color_intensity', 'hue', 'OD280_OD315', 'proline']
