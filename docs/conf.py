@@ -38,10 +38,23 @@ numpydoc_show_class_members = False
 
 autodoc_default_options = { "members": "var1, var2", "special-members": "call,init", "undoc-members": True, "exclude-members": "weakref", "member-order": "bysource" }
 
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_book_theme'
 html_title = "Wine Data Analysis"
 html_static_path = ['_static']
+
+# do not execute jupyter notebooks when building docs
+nb_execution_mode = "off"
+
+# download notebooks as .ipynb and not as .ipynb.txt
+html_sourcelink_suffix = ""
+
+suppress_warnings = [
+    f"autosectionlabel._examples/{filename.split('.')[0]}"
+    for filename in os.listdir("source/notebooks/")
+    if os.path.isfile(os.path.join("source/notebooks/", filename))
+]  # Avoid duplicate label warnings for Jupyter notebooks.
+
+remove_from_toctrees = ["_autosummary/*"]
