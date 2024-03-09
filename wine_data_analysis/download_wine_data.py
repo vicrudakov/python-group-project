@@ -5,7 +5,7 @@ import pandas as pd
 
 class DownloadWineData:
     def __init__(self, data_download_path, data_file_name):
-        """Download wine data.
+        """Download wine data and load it into the working environment.
 
         Parameters
         ----------
