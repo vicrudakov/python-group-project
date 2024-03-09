@@ -4,6 +4,17 @@ import matplotlib.pyplot as plt
 
 class VisualizeWineData:
     def __init__(self, data):
+        """Visualize wine data using histograms and boxplots.
+
+        Parameters
+        ----------
+        data : pandas.core.frame.DataFrame
+            Downloaded wine dataset.
+
+        Returns
+        -------
+        None.
+        """
         self.data = data
         self.var_names = ['Alcohol', 'Malic acid', 'Ash', 'Alcalinity of ash', 'Magnesium', 'Total phenols',
                           'Flavanoids', 'Nonflavanoid\nphenols', 'Proanthocyanins', 'Color intensity', 'Hue',
@@ -14,6 +25,19 @@ class VisualizeWineData:
         self.draw_boxplots()
 
     def draw_histograms(self):
+        """Draw histograms with additional boxplots for each feature in the dataset ('class', 'alcohol', 'malic_acid',
+        'ash', 'ash_alcalinity', 'magnesium', 'phenols_total', 'flavanoids', 'phenols_nonflavanoid', 'proanthocyanins',
+        'color_intensity', 'hue', 'OD280_OD315', 'proline').
+
+        Parameters
+        ----------
+        None.
+
+        Returns
+        -------
+        matplotlib.plot
+
+        """
         # create an empty figure
         plt.figure()
 
@@ -64,6 +88,19 @@ class VisualizeWineData:
         plt.show()
 
     def draw_boxplots(self):
+        """Draw boxplots for each feature in the dataset ('class', 'alcohol', 'malic_acid',
+        'ash', 'ash_alcalinity', 'magnesium', 'phenols_total', 'flavanoids', 'phenols_nonflavanoid', 'proanthocyanins',
+        'color_intensity', 'hue', 'OD280_OD315', 'proline') separated by class.
+
+        Parameters
+        ----------
+        None.
+
+        Returns
+        -------
+        matplotlib.plot
+
+        """
         # create an empty figure
         plt.figure()
 
@@ -86,7 +123,7 @@ class VisualizeWineData:
 
         # adjust spaces between plots
         fig.subplots_adjust(hspace=0.6, wspace=0.7, top=0.9)
-
+        
         # add title to the plot
         fig.suptitle("Boxplots for each feature in the dataset separated by class")
 
