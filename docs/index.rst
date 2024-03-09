@@ -12,7 +12,7 @@ Wine Data Analysis package documentation
 
    Home <self>
    API <source/modules.rst>
-
+   Example <source/notebooks/wine_data_analysis.ipynb>
 
 Introduction
 ------------
