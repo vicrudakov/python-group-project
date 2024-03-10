@@ -1,5 +1,5 @@
 .. Wine Data Analysis documentation master file, created by
-   sphinx-quickstart on Sat Mar  9 19:01:36 2024.
+   sphinx-quickstart on Sun Mar 10 17:17:21 2024.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -11,8 +11,8 @@ Wine Data Analysis package documentation
    :hidden:
 
    Home <self>
-   API <source/modules.rst>
-   Example <source/notebooks/wine_data_analysis.ipynb>
+   API <modules>
+   Example <notebooks/wine_data_analysis.ipynb>
 
 Introduction
 ------------

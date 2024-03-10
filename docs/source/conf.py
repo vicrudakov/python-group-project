@@ -3,11 +3,6 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-import os
-import sys
-
-sys.path.insert(0, os.path.abspath("../wine_data_analysis"))
-
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -51,10 +46,11 @@ nb_execution_mode = "off"
 # download notebooks as .ipynb and not as .ipynb.txt
 html_sourcelink_suffix = ""
 
+import os
 suppress_warnings = [
     f"autosectionlabel._examples/{filename.split('.')[0]}"
-    for filename in os.listdir("source/notebooks/")
-    if os.path.isfile(os.path.join("source/notebooks/", filename))
+    for filename in os.listdir("notebooks/")
+    if os.path.isfile(os.path.join("notebooks/", filename))
 ]  # Avoid duplicate label warnings for Jupyter notebooks.
 
 remove_from_toctrees = ["_autosummary/*"]
