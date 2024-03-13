@@ -379,6 +379,22 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;Figure size 1500x2000 with 26 Axes&gt;,
+ [&lt;Axes: title={&#39;center&#39;: &#39;Alcohol&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Malic acid&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Ash&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Alcalinity of ash&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Magnesium&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Total phenols&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Flavanoids&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Nonflavanoid\nphenols&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Proanthocyanins&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Color intensity&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Hue&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;OD280/OD315 of\ndiluted wines&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Proline&#39;}, xlabel=&#39;Frequency&#39;, ylabel=&#39;Value&#39;&gt;])
+</pre></div>
+</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 640x480 with 0 Axes&gt;
 </pre></div>
 </div>
@@ -395,6 +411,22 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&lt;Figure size 1000x1000 with 13 Axes&gt;,
+ [&lt;Axes: title={&#39;center&#39;: &#39;Alcohol&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Malic acid&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Ash&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Alcalinity of ash&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Magnesium&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Total phenols&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Flavanoids&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Nonflavanoid\nphenols&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Proanthocyanins&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Color intensity&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Hue&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;OD280/OD315 of\ndiluted wines&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;,
+  &lt;Axes: title={&#39;center&#39;: &#39;Proline&#39;}, xlabel=&#39;Class&#39;, ylabel=&#39;Value&#39;&gt;])
+</pre></div>
+</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 640x480 with 0 Axes&gt;
 </pre></div>
 </div>
@@ -407,7 +439,7 @@ document.write(`
 <h2>Use classification methods<a class="headerlink" href="#use-classification-methods" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_classify</span> <span class="o">=</span> <span class="n">ClassifyWineData</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_classify</span> <span class="o">=</span> <span class="n">ClassifyWineData</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="mi">89</span><span class="p">)</span>
 <span class="n">y_pred_logistic_regression</span> <span class="o">=</span> <span class="n">data_classify</span><span class="o">.</span><span class="n">logistic_regression</span><span class="p">()</span>
 <span class="n">y_pred_decision_tree</span> <span class="o">=</span> <span class="n">data_classify</span><span class="o">.</span><span class="n">decision_tree</span><span class="p">()</span>
 <span class="n">y_pred_knn</span> <span class="o">=</span> <span class="n">data_classify</span><span class="o">.</span><span class="n">knn</span><span class="p">()</span>
