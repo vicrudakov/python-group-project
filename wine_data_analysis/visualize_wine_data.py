@@ -84,8 +84,7 @@ class VisualizeWineData:
                        patch_artist=True, boxprops=dict(facecolor='white'), manage_ticks=False)
             ax_box.set_yticks([])
 
-        # show plot
-        plt.show()
+        return (fig, axes2)
 
     def draw_boxplots(self):
         """Draw boxplots for each feature in the dataset ('class', 'alcohol', 'malic_acid',
@@ -120,7 +119,7 @@ class VisualizeWineData:
         axes2.append(axes1[15])
         axes2.append(axes1[17])
         axes2.append(axes1[19])
-
+        
         # adjust spaces between plots
         fig.subplots_adjust(hspace=0.6, wspace=0.7, top=0.9)
         
@@ -136,5 +135,4 @@ class VisualizeWineData:
             ax.set_ylabel('Value')
             ax.get_legend().set_visible(False)
 
-        # show plot
-        plt.show()
+        return (fig, axes2)
