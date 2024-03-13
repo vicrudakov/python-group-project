@@ -6,7 +6,7 @@ import numpy as np
 
 
 class ClassifyWineData:
-    def __init__(self, data):
+    def __init__(self, data, test_size):
         """Classify wine data using logistic regression, decision tree, and 
         k-nearest neighbors classifiers.
         
@@ -15,6 +15,9 @@ class ClassifyWineData:
         data : pandas.core.frame.DataFrame
             The wine dataset containing features and target variables.
             
+        test_size : int
+            The size of the test data.
+            
         Returns
         -------
         None.
@@ -22,7 +25,7 @@ class ClassifyWineData:
         """
         x = data.drop(columns=['class'])
         y = data['class']
-        self.x_train, self.x_test, self.y_train, self.y_test = train_test_split(x, y, test_size=89, random_state=42)
+        self.x_train, self.x_test, self.y_train, self.y_test = train_test_split(x, y, test_size=test_size, random_state=42)
 
     def __call__(self):
         # predict values with three classification methods
