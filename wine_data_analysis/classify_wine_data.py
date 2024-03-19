@@ -150,9 +150,9 @@ class ClassifyWineData:
         ind_class_3_pred = set(np.where(y_pred == 3)[0])
         
         # calculate precisions for every class
-        precision_class_1 = len(ind_class_1_true.intersection(ind_class_1_pred)) / len(ind_class_1_pred)
-        precision_class_2 = len(ind_class_2_true.intersection(ind_class_2_pred)) / len(ind_class_2_pred)
-        precision_class_3 = len(ind_class_3_true.intersection(ind_class_3_pred)) / len(ind_class_3_pred)
+        precision_class_1 = len(ind_class_1_true.intersection(ind_class_1_pred)) / len(ind_class_1_pred) if len(ind_class_1_pred) > 0 else 0
+        precision_class_2 = len(ind_class_2_true.intersection(ind_class_2_pred)) / len(ind_class_2_pred) if len(ind_class_2_pred) > 0 else 0
+        precision_class_3 = len(ind_class_3_true.intersection(ind_class_3_pred)) / len(ind_class_3_pred) if len(ind_class_3_pred) > 0 else 0
         
         # calculate the average precision
         avg_precision = 1 / 3 * (precision_class_1 + precision_class_2 + precision_class_3)
@@ -181,9 +181,9 @@ class ClassifyWineData:
         ind_class_3_pred = set(np.where(y_pred == 3)[0])
         
         # calculate recalls for every class
-        recall_class_1 = len(ind_class_1_true.intersection(ind_class_1_pred)) / len(ind_class_1_true)
-        recall_class_2 = len(ind_class_3_true.intersection(ind_class_2_pred)) / len(ind_class_2_true)
-        recall_class_3 = len(ind_class_3_true.intersection(ind_class_3_pred)) / len(ind_class_3_true)
+        recall_class_1 = len(ind_class_1_true.intersection(ind_class_1_pred)) / len(ind_class_1_true) if len(ind_class_1_true) > 0 else 0
+        recall_class_2 = len(ind_class_2_true.intersection(ind_class_2_pred)) / len(ind_class_2_true) if len(ind_class_2_true) > 0 else 0
+        recall_class_3 = len(ind_class_3_true.intersection(ind_class_3_pred)) / len(ind_class_3_true) if len(ind_class_3_true) > 0 else 0
         
         # calculate the average recall
         avg_recall = 1 / 3 * (recall_class_1 + recall_class_2 + recall_class_3)
