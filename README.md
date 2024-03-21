@@ -1,3 +1,4 @@
+![Tests](https://github.com/vicrudakov/python-group-project/actions/workflows/tests.yml/badge.svg)
 ![Tests](https://github.com/vicrudakov/python-group-project/actions/workflows/docs.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 
