@@ -27,7 +27,7 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-numpydoc_show_class_members = False
+numpydoc_show_class_members = True
 
 autodoc_default_options = { "members": "var1, var2", "special-members": "call,init", "undoc-members": True, "exclude-members": "weakref", "member-order": "bysource" }
 

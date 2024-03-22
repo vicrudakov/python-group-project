@@ -7,8 +7,8 @@ Wine Data Analysis package documentation
 ==============================================
 
 .. toctree::
-   :maxdepth: 3
-   :hidden:
+   :maxdepth: 2
+   :caption: Contents:
 
    Home <self>
    API <modules>
