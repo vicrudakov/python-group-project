@@ -146,7 +146,8 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="modules.html">API</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">wine_data_analysis package</a></li>
@@ -354,6 +355,32 @@ document.write(`
 <dt class="sig sig-object py" id="wine_data_analysis.classify_wine_data.ClassifyWineData">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wine_data_analysis.classify_wine_data.</span></span><span class="sig-name descname"><span class="pre">ClassifyWineData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wine_data_analysis/classify_wine_data.html#ClassifyWineData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wine_data_analysis.classify_wine_data.ClassifyWineData" title="Link to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p class="rubric">Methods</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code>()</p></td>
+<td><p>Call self as a function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#wine_data_analysis.classify_wine_data.ClassifyWineData.accuracy" title="wine_data_analysis.classify_wine_data.ClassifyWineData.accuracy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">accuracy</span></code></a>(y_pred)</p></td>
+<td><p>Compute the accuracy of the classifier.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#wine_data_analysis.classify_wine_data.ClassifyWineData.average_precision" title="wine_data_analysis.classify_wine_data.ClassifyWineData.average_precision"><code class="xref py py-obj docutils literal notranslate"><span class="pre">average_precision</span></code></a>(y_pred)</p></td>
+<td><p>Compute the average precision of the classifier.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#wine_data_analysis.classify_wine_data.ClassifyWineData.average_recall" title="wine_data_analysis.classify_wine_data.ClassifyWineData.average_recall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">average_recall</span></code></a>(y_pred)</p></td>
+<td><p>Compute the average recall of the classifier.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#wine_data_analysis.classify_wine_data.ClassifyWineData.decision_tree" title="wine_data_analysis.classify_wine_data.ClassifyWineData.decision_tree"><code class="xref py py-obj docutils literal notranslate"><span class="pre">decision_tree</span></code></a>()</p></td>
+<td><p>Fit a decision tree classifier to the training data and predicts  classes for the test data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#wine_data_analysis.classify_wine_data.ClassifyWineData.knn" title="wine_data_analysis.classify_wine_data.ClassifyWineData.knn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">knn</span></code></a>()</p></td>
+<td><p>Fit a k-nearest neighbors classifier to the training data and  predicts classes for the test data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#wine_data_analysis.classify_wine_data.ClassifyWineData.logistic_regression" title="wine_data_analysis.classify_wine_data.ClassifyWineData.logistic_regression"><code class="xref py py-obj docutils literal notranslate"><span class="pre">logistic_regression</span></code></a>()</p></td>
+<td><p>Fit a logistic regression model to the training data and predicts  classes for the test data.</p></td>
+</tr>
+</tbody>
+</table>
 <dl class="py method">
 <dt class="sig sig-object py" id="wine_data_analysis.classify_wine_data.ClassifyWineData.logistic_regression">
 <span class="sig-name descname"><span class="pre">logistic_regression</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wine_data_analysis/classify_wine_data.html#ClassifyWineData.logistic_regression"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wine_data_analysis.classify_wine_data.ClassifyWineData.logistic_regression" title="Link to this definition">#</a></dt>
@@ -468,6 +495,23 @@ predicts classes for the test data.</p>
 <dt class="sig sig-object py" id="wine_data_analysis.download_wine_data.DownloadWineData">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wine_data_analysis.download_wine_data.</span></span><span class="sig-name descname"><span class="pre">DownloadWineData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_download_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_file_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wine_data_analysis/download_wine_data.html#DownloadWineData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wine_data_analysis.download_wine_data.DownloadWineData" title="Link to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p class="rubric">Methods</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code>()</p></td>
+<td><p>Call self as a function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#wine_data_analysis.download_wine_data.DownloadWineData.download_data" title="wine_data_analysis.download_wine_data.DownloadWineData.download_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">download_data</span></code></a>()</p></td>
+<td><p>Download wine data from url to the specified local path.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#wine_data_analysis.download_wine_data.DownloadWineData.load_data" title="wine_data_analysis.download_wine_data.DownloadWineData.load_data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_data</span></code></a>()</p></td>
+<td><p>Load wine data from saved file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#wine_data_analysis.download_wine_data.DownloadWineData.set_cwd" title="wine_data_analysis.download_wine_data.DownloadWineData.set_cwd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_cwd</span></code></a>()</p></td>
+<td><p>Set current working directory to the local path where the data will be stored.</p></td>
+</tr>
+</tbody>
+</table>
 <dl class="py method">
 <dt class="sig sig-object py" id="wine_data_analysis.download_wine_data.DownloadWineData.set_cwd">
 <span class="sig-name descname"><span class="pre">set_cwd</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wine_data_analysis/download_wine_data.html#DownloadWineData.set_cwd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wine_data_analysis.download_wine_data.DownloadWineData.set_cwd" title="Link to this definition">#</a></dt>
@@ -534,6 +578,20 @@ predicts classes for the test data.</p>
 <dt class="sig sig-object py" id="wine_data_analysis.visualize_wine_data.VisualizeWineData">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wine_data_analysis.visualize_wine_data.</span></span><span class="sig-name descname"><span class="pre">VisualizeWineData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wine_data_analysis/visualize_wine_data.html#VisualizeWineData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wine_data_analysis.visualize_wine_data.VisualizeWineData" title="Link to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p class="rubric">Methods</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__call__</span></code>()</p></td>
+<td><p>Call self as a function.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#wine_data_analysis.visualize_wine_data.VisualizeWineData.draw_boxplots" title="wine_data_analysis.visualize_wine_data.VisualizeWineData.draw_boxplots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">draw_boxplots</span></code></a>()</p></td>
+<td><p>Draw boxplots for each feature in the dataset ('class', 'alcohol', 'malic_acid', 'ash', 'ash_alcalinity', 'magnesium', 'phenols_total', 'flavanoids', 'phenols_nonflavanoid', 'proanthocyanins', 'color_intensity', 'hue', 'OD280_OD315', 'proline') separated by class.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#wine_data_analysis.visualize_wine_data.VisualizeWineData.draw_histograms" title="wine_data_analysis.visualize_wine_data.VisualizeWineData.draw_histograms"><code class="xref py py-obj docutils literal notranslate"><span class="pre">draw_histograms</span></code></a>()</p></td>
+<td><p>Draw histograms with additional boxplots for each feature in the dataset ('class', 'alcohol', 'malic_acid', 'ash', 'ash_alcalinity', 'magnesium', 'phenols_total', 'flavanoids', 'phenols_nonflavanoid', 'proanthocyanins', 'color_intensity', 'hue', 'OD280_OD315', 'proline').</p></td>
+</tr>
+</tbody>
+</table>
 <dl class="py method">
 <dt class="sig sig-object py" id="wine_data_analysis.visualize_wine_data.VisualizeWineData.draw_histograms">
 <span class="sig-name descname"><span class="pre">draw_histograms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/wine_data_analysis/visualize_wine_data.html#VisualizeWineData.draw_histograms"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wine_data_analysis.visualize_wine_data.VisualizeWineData.draw_histograms" title="Link to this definition">#</a></dt>
